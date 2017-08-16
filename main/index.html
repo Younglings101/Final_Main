@@ -125,10 +125,6 @@
                         </li>
                     </ul>
                     <iframe id="CYframe" ng-src="{{getUrl()}}" class="CYframe" scrolling="yes" frameborder="0" ng-load="{{iframeResize()}}"></iframe>
-                    <a id="back-to-top" href="#top" class="btn btn-lg" role="button" title="Click to return on the top page" data-toggle="tooltip"
-                        data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-                    <a id="minimise" class="btn btn-lg" role="button" title="Click to minimise profile page" data-toggle="tooltip" data-placement="left"
-                        ng-click="iframeMinimise()"><span class="glyphicon glyphicon-zoom-out"></span></a>
                 </div>
             </div>
 
@@ -333,18 +329,6 @@
             <script src="lib/angular-route.js" type="text/javascript"></script>
             <script src="js/younglings101Routing.js" type="text/javascript"></script>
             <script>
-                $(document).ready(function () {
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() > 200) {
-                            $('#back-to-top').fadeIn();
-                            $('#minimise').fadeIn();
-                        } else {
-                            $('#back-to-top').fadeOut();
-                            $('#minimise').fadeOut();
-                        }
-                    });
-                });
-    
                 $(document).ready(function () {
                     $("a").on('click', function (event) {
                         if (this.hash !== "") {
