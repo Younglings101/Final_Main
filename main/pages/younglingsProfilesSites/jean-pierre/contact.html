@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            Jean-Pierre Olwagen
+        </title>
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet"  id = "sheet" href="darkTheme.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"> 
+        
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <button type = "switchStyle" onclick="switchStyle();return false;"><i class="fa fa-sun-o fa-2x fontIcon" id="styleSwitchIcon" aria-hidden="true"></i></button>
+            </div>
+             <div class= "navbar container">
+                <a id="profile-name" class="alignable pull-left" href="#">Jean-Pierre Olwagen</a>
+                <ul class="alignable pull-right navbar-ul">
+                   <li class="alignable pull-right nav-list">
+                        <a href="https://github.com/JeanPierreO " target = "_Blank">GitHub</a>
+                    </li>
+                    <li class="alignable pull-right nav-list">
+                        <a href="index.html" target = "_Blank">Home</a>
+                        //
+                    </li>
+                </ul>
+            </div>
+             <hr>
+            <div class="container content">
+                <h2 id="about me">Contact me</h2>
+                    <p class="aboutMeText" >
+                        <p>Want to get in touch? Just fill in the form below or email me at <a>Olwagenjp@gmail.com.</a></p>
+                    </p>
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <h4><label class="col-sm-2 control-label">Message</label></h4>
+                            <div class="col-sm-9">
+                            <input type="email" class="form-control" id="msgInpit">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default submitBtn">Submit</button>
+                    </form>
+            </div>
+        </div>
+       
+    </body>
+
+     <script type="text/javascript">
+        function switchStyle (){
+            var sheet = document.getElementById("sheet");
+            var icon = document.getElementById("styleSwitchIcon");
+            if(sheet.href == "file:///C:/Users/Jean-Pierre/Documents/GitHub/Portofolio/darkTheme.css"){
+                sheet.href = "lightTheme.css";
+                icon.className = "fa fa-moon-o fa-2x fontIcon";
+            }else if(sheet.href == "file:///C:/Users/Jean-Pierre/Documents/GitHub/Portofolio/lightTheme.css"){
+                sheet.href = "darkTheme.css";
+                icon.className = "fa fa-sun-o fa-2x fontIcon";
+            }
+
+            
+        }
+    </script>
+
+</html>
+
+

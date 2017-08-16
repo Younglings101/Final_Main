@@ -1,0 +1,707 @@
+    /*main*/
+    *{
+        font-family: 'Open Sans Condensed' , sans-serif;
+    }
+
+    body{
+        background-color: #be3144;
+        width: 100%;
+    }
+    
+    /*index-style*/
+    .index-nav {
+        background-color: #be3144;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        height: auto;
+    }
+
+    .index-nav-list {
+        list-style: none;
+        display: flex;
+        float: left;
+        align-items: center;
+    }
+
+     ul{
+        margin-bottom: 0px;
+    }
+
+    .index-nav-list li {
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding: 5px 71px 5px 71px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .index-nav-list li:hover{
+        color: #d3d6db;
+        background-color: #D13248;
+        cursor: pointer;
+    } 
+
+    .footer{
+        background-color: #be3144;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .footer-list{
+        list-style-type: none;
+        display: flex;
+        float: right;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .footer-link{
+        color: #FFF;
+        text-decoration: none;
+        background-color: #be3144;
+        padding: 1px 5px 1px 5px;
+    }
+
+    .footer-link:hover{
+        color: #d3d6db;
+        text-decoration: none;
+    }
+
+    .rights h1{
+        color: #FFF;
+        font-size: 20px;
+    }
+
+    /*homepage-style*/
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+    
+    :root {
+        --text-color: #d3d6db;
+    }
+    
+    html {
+     margin:0;
+     padding:0;
+    }
+    
+    body {
+     margin:0;
+     height:100%;
+     
+     font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
+    .homepageContainer{
+        position: relative;
+        z-index: 3;
+        background: url("../img/Background_Subtle.png");
+    }
+    
+    .homepageInfoPanel{
+        width:35%;
+        float:left;
+        margin-left: 10%;
+        height:auto;
+        background:transparent;
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+        .homepageInfoPanel {
+            width:90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    
+        .alienLogoContainer{
+            margin-left: 20%;
+            margin-right: 25%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 667px) {
+        .alienLogoContainer{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    
+         .homepageInfoPanel {
+            width:90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    
+    @media screen and (max-width: 568px) {
+        .alienLogoContainer{
+            margin-left: 25%;
+            margin-right: 45%;
+        }
+         .homepageInfoPanel {
+            width:90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    
+    #companyText{
+        text-align: center;
+        margin-top: 10%;
+        font-size: 2.8em;
+        color:var(--text-color); 
+    }
+    
+    #groupName{
+        text-align: center;
+        font-size: 2.8em;
+        color: var(--text-color);
+    }
+    
+    .alienLogo{
+        margin-top:10%;
+        margin-bottom:10%;
+        -webkit-transition: -webkit-transform 1.5s ease;
+    
+        height:140px;
+        width:120px;
+    }
+    
+    .alienLogo:hover{
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+    
+        -webkit-transition: -webkit-transform 1.5s ease-in;
+    }
+    
+    .alienLogoContainer{
+        margin-left: 36%;
+        margin-right: 36%;
+    }
+    
+    .homepageInfoText{
+        font-size: 1.3em;
+        margin:5%;
+        color: var(--text-color);
+    }
+
+    /*younglings101-style*/
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+    @import url('https://use.fontawesome.com/f5a0c55ae1.js');
+    
+    .younglings101-panel{
+        width: 100%;
+        height: auto;
+        background-image: url("../img/Background_Subtle.png");
+    }
+    
+    .younglings101{
+        margin: 20px 200px 20px 200px;
+    }
+    
+    .younglings101 h1 {
+        color: #FFF;
+        text-align: center;
+    }
+    
+    .younglings101 h2{
+        color: #FFF;
+        text-align: center;
+        padding-top: 25px;
+    }
+    
+    .social-nav {
+        background-color: #be3144;     
+    }
+    
+    .social-media-list {
+        list-style: none;
+        text-align: center;
+        align-content: center;
+    }
+    
+    .social-media-list li {
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding: 3px 71px 3px 71px;
+        float: left;
+        display: block;
+    }
+    
+    .social-media-list li:hover {
+        cursor: pointer;
+        background-color: #D13248;
+        color: #d3d6db;
+    }
+    
+    .social-media-display{
+        margin: 0px;
+    }
+    
+    #link-facebook{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    #link-facebook:hover{
+        background-color: #263c68;
+    }
+    
+    #link-twitter{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    #link-twitter:hover{
+        background-color: #263c68;
+    }
+    
+    #link-youtube{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #cc181e;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    #link-youtube:hover{
+        background-color: #870e12;
+    }
+    
+    #link-instagram{
+        text-decoration: none;
+        padding: 4px;
+        color: white;
+        border-radius: 3px;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #4b65d4,#dd2c72, #ffde85); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #4b65d4,#dd2c72, #ffde85); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #4b65d4,#dd2c72, #ffde85); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right,#4b65d4, #dd2c72, #ffde85); /* Standard syntax */
+    }
+    
+    #link-instagram:hover{
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #dd2c72, #ffde85,#4b65d4); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #dd2c72, #ffde85,#4b65d4); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #dd2c72, #ffde85,#4b65d4); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right,#dd2c72, #ffde85,#4b65d4); /* Standard syntax */
+    }
+    
+    #link-linkedin{
+        text-decoration: none;
+        padding: 4px;
+        background-color: #4267b2;
+        color: white;
+        border-radius: 3px;
+        }
+    
+        #link-linkedin:hover{
+            background-color: #263c68;
+        }
+    
+        .youtube-panel{
+            margin: 1px 1px 1px 1px;
+            height: auto;
+            border: 1px solid #be3144;
+            background-color: #6c6a6a;
+        }
+    
+        .twitter-panel {
+            margin: 1px 1px 1px 1px;
+            height: auto;
+            border: 1px solid #be3144;
+            background-color: #6c6a6a;
+        }
+    
+        .twitter-timeline{
+            height: 100%;
+            width: 100%;
+        }
+    
+        .facebook-panel{
+            margin: 1px 1px 1px 1px;
+            height: auto;
+            border: 1px solid #be3144;
+            background-color: #6c6a6a;
+            }
+    
+        .instagram-panel{
+            margin: 1px 1px 1px 1px;
+            height: auto;
+            border: 1px solid #be3144;
+            background-color: #6c6a6a;
+            text-align: center;
+        }
+    
+        .tabcontent {
+            display: none;
+            padding: 20px 10px;
+            text-align: justify;
+        }
+    
+        .link-button{
+            margin-top: 20px;
+        }
+    
+        .display-window{
+            margin-top: 20px;
+        }
+    
+        .facebook{
+            width: 500px;
+        }
+    
+        .facebook-container{
+            padding: 10px;
+            width: 49%;
+            height: 100%;
+            margin-left:28%
+        }
+    
+        .youtube-container{
+            padding: 10px;
+            width: 49%;
+            height: 100%;
+            margin-left:22%
+        }
+    
+        .instagram-container{
+            padding: 10px;
+            width: 49%;
+            height: 100%;
+            margin-left:22%
+        }
+    
+        @media screen and (max-width:800px){
+    
+        .younglings101{
+            margin: 5% 5%;
+        }
+    
+        .nav-tab span{
+            display: none;
+        }
+    
+        #twitter-tab:after{
+            font-family: FontAwesome;
+            content: "\f099";
+        }
+    
+        #facebook-tab:after{
+            font-family: FontAwesome;
+            content: "\f09a";
+        }
+    
+        #instagram-tab:after{
+            font-family: FontAwesome;
+            content: "\f16d";
+        }
+    
+        #youtube-tab:after{
+            font-family: FontAwesome;
+            content: "\f167";
+        }
+    
+        #linkedin-tab:after{
+            font-family: FontAwesome;
+            content: "\f0e1";
+        }
+    
+    }
+    
+    .ng-scope{
+        height: auto;
+    }
+
+    /*become-a-youngling-style*/
+    .become-a-youngling {
+        text-align: center;
+        color: white;
+        background-image: url("../img/Background_Subtle.png");
+    }
+    
+    #BAYnav-become-icons {
+        padding-top: 2%;
+        letter-spacing: 20px;
+    }
+    
+    #become-youngling-text {
+        background-color: rgba(255, 252, 252, 0.1);
+    }
+    
+    #BAYcollapse-icon {
+        text-decoration: none;
+        color: #be3144;
+    }
+    
+    #BAYstart_coding {
+        color: white;
+    }
+    
+    .img-logo {
+        height: auto;
+        width: 124px;
+        padding-top: 30px;
+    }
+    
+    .img-logo-link {
+        height: auto;
+        width: 124px;
+        padding-top: 30px;
+    }
+    
+    .overlay-b-a-younling {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        width: 124px;
+        /*opacity: 0;*/
+        transition: .5s ease;
+    }
+    
+    #hideMe {
+        -webkit-animation: hideMe 5s forwards;
+        animation: hideMe 5s forwards;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes hideMe {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes hideMe {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    /*---------------------------------------------------------------------------*/
+    
+    .BAYhexGrid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        list-style-type: none;
+    }
+    
+    .BAYhex {
+        position: relative;
+        visibility: hidden;
+        outline: 1px solid transparent;
+        /* fix for jagged edges in FF on hover transition */
+    }
+    
+    .BAYhex::after {
+        content: '';
+        display: block;
+        padding-bottom: 86.602%;
+        /* =  100 / tan(60) * 1.5 */
+    }
+    
+    .BAYhexIn {
+        position: absolute;
+        width: 96%;
+        padding-bottom: 110.851%;
+        /* =  width / sin(60) */
+        margin: 0 2%;
+        overflow: hidden;
+        visibility: hidden;
+        outline: 1px solid transparent;
+        /* fix for jagged edges in FF on hover transition */
+        -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+        -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+        transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+    }
+    
+    .BAYhexIn * {
+        position: absolute;
+        visibility: visible;
+        outline: 1px solid transparent;
+        /* fix for jagged edges in FF on hover transition */
+    }
+    
+    .BAYhexLink {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+        -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+        transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+        background-color: #be3144;
+    }
+
+    /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+    
+    @media (min-width:1201px) {
+        /* <- 2-1  hexagons per row */
+        .BAYhexGrid {
+            padding-bottom: 11.2%;
+            padding-top: 10%;
+        }
+        .BAYhex {
+            width: 50%;
+            /* = 100 / 3 */
+        }
+        .BAYhex:nth-child(3n+3) {
+            /* first hexagon of even rows */
+            margin-left: 25%;
+            /* = width of .hex / 2  to indent even rows */
+        }
+    }
+    
+    @media (max-width: 1200px) and (min-width:901px) {
+        /* <- 2-1  hexagons per row */
+        .BAYhexGrid {
+            padding-bottom: 11.2%;
+            padding-top: 10%;
+        }
+        .BAYhex {
+            width: 50%;
+            /* = 100 / 3 */
+        }
+        .BAYhex:nth-child(3n+3) {
+            /* first hexagon of even rows */
+            margin-left: 25%;
+            /* = width of .hex / 2  to indent even rows */
+        }
+    }
+    
+    @media (max-width: 900px) and (min-width:801px) {
+        /* <- 2-1  hexagons per row */
+        .BAYhexGrid {
+            padding-top: 10%;
+            padding-bottom: 11.2%;
+        }
+        .BAYhex {
+            width: 50%;
+            /* = 100 / 3 */
+        }
+        .BAYhex:nth-child(3n+3) {
+            /* first hexagon of even rows */
+            margin-left: 25%;
+            /* = width of .hex / 2  to indent even rows */
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .BAYhexGrid {
+            font-size: 13px;
+        }
+    }
+
+    /*partner-with-younglings-style*/
+    .pwyHeading{
+        font-family: 'Open Sans Condensed';
+        text-align:center;
+        color: white;
+    }
+    
+    .PWYbody{
+        font-family: 'Open Sans Condensed';
+        font-size:16px;
+        background-image: url("../img/Background_Subtle.png");
+        color: #303841;
+        margin-right :auto;
+        margin-left:auto;
+        padding:2%;
+        margin-top: 20px;
+        
+    }
+    
+    .PWYbody2{
+        width: 30%;
+        padding:3%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border-radius: 1%;
+    }
+    
+    .pwyHeading{
+        padding-left: 40px;
+    }
+    
+    .pwy-p{
+        width: 100%;
+    }
+    
+    .PWYinput-field {
+        font-family: 'Open Sans Condensed';
+        width: 90%;
+        margin: 10px;
+        margin-left:80%;
+        border-width: 1px;
+        border-color: #fff;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #d3d6db;
+        color: #303841;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: #ffffff;
+    }
+    
+    .PWYinput-button {
+        font-family: 'Open Sans Condensed';
+        margin: 10px;
+        background-color: #D13248;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        color: #d3d6db;
+    }
+    
+    .PWYinput-button:hover{
+        background-color: #be3144;
+    }
+    
+    @media screen and (max-width:414px) {
+        .PWYbody2 {
+            width: 95%;
+        }
+    }
+    /**/
+    /**/
