@@ -1,60 +1,60 @@
-<head>
+<div id="CY">
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../styles/currentYounglingStyles.css"></link>
-</head>
 
-<body id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
-    <div class="page-header" id="top">
-        <h1>Current Younglings</h1>
-    </div>
-    <ul id="hexGrid">
-        <li class="hex" ng-repeat="person in links">
-            <div class="hexIn">
-                <a class="hexLink" href="#frame" ng-click="setCurrentUrl(person.link)">
+    <div id="app" ng-app="main" class="container-fluid" ng-controller="randomiser">
+        <div class="page-header" id="top">
+            <h1>Current Younglings</h1>
+        </div>
+        <ul id="hexGrid">
+            <li class="hex" ng-repeat="person in links">
+                <div class="hexIn">
+                    <a class="hexLink" href="#frame" ng-click="setCurrentUrl(person.link)">
                   <img src="{{person.src}}" alt="" class="img-responsive"/>
-                  <h1>{{person.name}}</h1>
-                  <p>{{person.surname}}</p>
+                  <h1 class="{{person.display}}">{{person.name}}</h1>
+                  <p class="{{person.display}}">{{person.surname}}</p>
                 </a>
-            </div>
-        </li>
-    </ul>
-    <iframe id="frame" ng-src="{{getUrl()}}" class="frame" scrolling="yes" frameborder="0" ng-load="{{iframeResize()}}"></iframe>
-    <a id="back-to-top" href="#top" class="btn btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip"
-        data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-    <a id="minimise" class="btn btn-lg minimise" role="button" title="Click to minimise profile page" data-toggle="tooltip"
-        data-placement="left" ng-click="iframeMinimise()"><span class="glyphicon glyphicon-zoom-out"></span></a>
-    <script src="../lib/angular.min.js" type="text/javascript"></script>
-    <script src="../lib/angular-route.js" type="text/javascript"></script>
-    <script src="../js/currentYounglings.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
-                    $('#back-to-top').fadeIn();
-                    $('#minimise').fadeIn();
-                } else {
-                    $('#back-to-top').fadeOut();
-                    $('#minimise').fadeOut();
-                }
+                </div>
+            </li>
+        </ul>
+        <iframe id="frame" ng-src="{{getUrl()}}" class="frame" scrolling="yes" frameborder="0" ng-load="{{iframeResize()}}"></iframe>
+        <a id="back-to-top" href="#top" class="btn btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip"
+            data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <a id="minimise" class="btn btn-lg minimise" role="button" title="Click to minimise profile page" data-toggle="tooltip" data-placement="left"
+            ng-click="iframeMinimise()"><span class="glyphicon glyphicon-zoom-out"></span></a>
+        <script src="../lib/angular.min.js" type="text/javascript"></script>
+        <script src="../lib/angular-route.js" type="text/javascript"></script>
+        <script src="../js/currentYounglings.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('#back-to-top').fadeIn();
+                        $('#minimise').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                        $('#minimise').fadeOut();
+                    }
+                });
             });
-        });
 
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 600, function () {
-                        window.location.hash = hash;
-                    });
-                }
+            $(document).ready(function () {
+                $("a").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 600, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
             });
-        });
-    </script>
-</body>
+        </script>
+    </div>
+</div>

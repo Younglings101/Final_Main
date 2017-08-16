@@ -1,0 +1,168 @@
+*{
+    font-family: "Courier New";
+}
+
+@keyframes tabSelect {
+    0%   {color: #000000;}
+    25%   {color: #d9d9d9;}
+    50%   {color: #000000;}
+    100% {color: #d9d9d9;}
+}
+
+h1,h2,h3{
+    font-weight: bold;
+}
+
+h1{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 60px;
+    opacity: 0.8;
+}
+
+h2{
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #000000;
+    opacity: 0.8; 
+}
+
+h3{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 15px;
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    background: url("../images/background.jpg");
+    background-size: cover;
+}
+
+#profilePic{
+    width: 200px;
+    height: 240px;
+    position: relative;
+    border: 3px solid #FFF;
+    margin: 20px;
+    
+}
+
+.mainHeader{
+    margin-top: -15px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 4;
+    padding-bottom: 30px;
+}
+
+.containerMain{
+    padding-top: 190px;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.container{
+    border: 1px solid #000000;
+    background-color: #FFF;
+    opacity: 0.8; 
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+/* .container li{
+    font-size: 15px;
+} */
+
+/* .mainHeader ul{
+    position: fixed;
+    background: none;
+    background-color: #FFF;
+    width: 95%;
+    list-style: none;
+    border: 1px solid #000000;
+    opacity: 0.9; 
+    padding-left:14%;
+} */
+
+.mainHeader li a{
+    padding: 22px 50px;
+    color:#000000;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:767px) {
+    
+    .navbar {
+        padding: 20px 0;
+        color: #000000;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .mainHeader li a{
+        padding: 3px 0px;
+        font-size: 15px;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    /* .mainHeader li{
+        padding: 20px;
+        width: 150px;
+        display: block;
+        text-align: center;
+    } */
+
+    .top-nav-collapse {
+         padding: 0;
+    }
+
+    .containerMain{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+.navbar-toggle{
+    background-color: #FFF;
+}
+
+.collapse{
+    width: 100%;
+}
+
+.collapse ul{
+    padding-left: 8%;
+}
+
+.LI-profile-badge{
+    margin-left:  40px;
+}
+
+#OCABadge{
+    opacity: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.anchor{
+    position: relative; 
+    padding-top: 20%;
+    margin-top: -20%;
+}
+
+.mainHeader li a:hover{
+    cursor: pointer;
+    animation: tabSelect 8s ease-out alternate infinite;
+}
