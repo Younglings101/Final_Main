@@ -36,18 +36,15 @@ app.config(function ($routeProvider){
     $scope.iframeResize = function () {
         var frame = document.getElementById('CYframe');
         if ($scope.getUrl() === $sce.trustAsResourceUrl("")) {
-            frame.style.height = '0%';
-            console.log('shrunk');
+            frame.style.height = '0px';
         }
         else {
-            frame.style.height = window.innerHeight;
-            console.log(window.innerHeight);
+            frame.style.height = window.innerHeight + "px";
         }
     }
 
     $scope.iframeMinimise = function(){
         $scope.setCurrentUrl("");
-        console.log("I did a thing");
     }
 }]);
 
