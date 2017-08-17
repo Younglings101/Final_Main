@@ -1,0 +1,101 @@
+body {
+    background:-webkit-linear-gradient(#212121,  #434343);
+    color: #F07B3F;
+    font-family:'Manuale';
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border: none;
+}
+
+.button-next{    
+    background: url("../images/arrow-22-right.png");
+    background-size: 100%;
+}
+
+.button-next:hover{
+    opacity: 0.6; 
+}
+
+.button-previous{
+    background: url("../images/arrow-22-left.png");
+    background-size: 100%;
+}
+
+.button-previous:hover{
+    opacity:0.6;
+}
+
+.container-level-1{
+    width: 97%;
+    margin: 10px;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #F07B3F;
+}
+
+.title{
+    width: 97%;
+    background-color: #F07B3F;
+    text-align: center;
+    color: #323232;
+    font-size: 80px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+h1{
+    font-size: 35px;
+    background-color:  #F07B3F;
+    color:  #323232;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+ul{
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ol{
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 650px;
+    }
+    p{
+        margin: 10px;
+    }
+
+}
