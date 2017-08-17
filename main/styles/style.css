@@ -221,21 +221,22 @@
 
 
     .tabable-panel {
-        background-color: #be3144;      
+        background-color: #be3144;
     }
 
-    .tabable-panel a{
+    .tabable-panel li{
         color: #FFF; 
     }
-
-
     
-    .tabable-panel a:hover{
-        color: #D13248
+    .tabable-panel li:hover{
+        color: grey;
+        background-color: #E3384F;
+        cursor: pointer;
     }
     
     li.active{
-        color: #D13248;
+        color: white;
+        background-color: #B11429;
     }
     /* .social-media-list {
         list-style: none;
@@ -953,5 +954,10 @@
       }
 
       .social-media-panel{
-    background-color: #fff;
-}
+        background-color: #fff;
+    }
+
+    .Ytabs{
+        padding: 1% 3%;
+        color: lightgray;
+    }
