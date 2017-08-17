@@ -716,11 +716,13 @@
         background: url("../img/Background_Subtle.png");
     }
     .CYframe{
+        position: relative;
         border: none;
         height: auto;
-        width: 100%;
+        width: 101.5%;
         margin: 0px;
         margin-top: 1%;
+        z-index: 10;
     }
     
     .CYh1, .CYpage-header{

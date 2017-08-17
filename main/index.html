@@ -1,242 +1,267 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="main" ng-controller="randomiser">
-    <head>
-        <title>Younglings</title>
-        <meta charset="UTF-8">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<head>
+    <title>Younglings</title>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                    
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://use.fontawesome.com/f5a0c55ae1.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
 
-        <!--<link rel="stylesheet" href="styles/homepageStyle.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/f5a0c55ae1.js"></script>
+
+    <!--<link rel="stylesheet" href="styles/homepageStyle.css">
         <link rel="stylesheet" href="css/younglings101-style.css">
         <link rel="stylesheet" href="css/become_a_youngling-style.css">
         <link rel="stylesheet" href="styles/PWYstyle.css">-->
-        <link rel="stylesheet" href="styles/hexagon.css">
-        <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hexagon.css">
+    <link rel="stylesheet" href="styles/style.css">
 
-        <link href = "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!--navbar-->
-        <div class = "header row container-fluid">
-                <nav class = "index-nav nav nav-navbar" id = "younglingsNavBar">
-                    <ul class="index-nav-list">
-                        <li onclick="window.location.href = '#'">Home</li>
-                        <li onclick="window.location.href = '#'">Current Younglings</li>
-                        <li onclick="window.location.href = '#'">#Younglings101</li>
-                        <li onclick="window.location.href = '#'">Become a Youngling</li>
-                        <li onclick="window.location.href = '#'">Partner with Younglings</li>
-                    <ul>
-                </nav>
+    <!--navbar-->
+    <div class="header row container-fluid">
+        <nav class="index-nav nav nav-navbar" id="younglingsNavBar">
+            <ul class="index-nav-list">
+                <li onclick="window.location.href = '#HP'">Home</li>
+                <li onclick="window.location.href = '#CY'">Current Younglings</li>
+                <li onclick="window.location.href = '#Y101'">#Younglings101</li>
+                <li onclick="window.location.href = '#BAY'">Become a Youngling</li>
+                <li onclick="window.location.href = '#PWY'">Partner with Younglings</li>
+                <ul>
+        </nav>
+    </div>
+
+    <!--homepage-->
+    <section class="anchor" id="HP">
+    <div class="container-fluid homepageContainer">
+        <div class="bgContainer">
+            <div class="container-fluid homepageInfoPanel">
+                <p id="companyText">Barclays' Aliens</p>
+                <p id="groupName">Younglings</p>
+                <img class="alienLogo alienLogoContainer img-responsive" alt="Cowboy_Alien" src="img/Alien_World.png">
+                <p class="homepageInfoText">Welcome to Younglings, an innovative program run by Barclays Aliens that seeks to find young people interested
+                    in technology, develop their technical ability, and match them with a job at Aliens or another leading
+                    company in South Africa.</p>
+
+                <p class="homepageInfoText">Through the Younglings program our students learn industry relevant, in-demand software engineering tools
+                    like Java and JavaScript, in addition to the soft skills that will help them excel in the workplace.</p>
+
+                <p class="homepageInfoText">We are passionate about developing technical talent here in South Africa, expanding meaningful work to all
+                    people with the right combination of ability and drive. Here at Younglings, we are teaching the technologists
+                    of tomorrow. Join Us.</p>
             </div>
+        </div>
 
-            <!--homepage-->
-            <div class="container-fluid homepageContainer">
-                <div class="bgContainer">
-                    <div class="container-fluid homepageInfoPanel">
-                        <p id="companyText">Barclays' Aliens</p>
-                    <p id="groupName">Younglings</p>
-                        <img  class="alienLogo alienLogoContainer img-responsive" alt="Cowboy_Alien" src="img/Alien_World.png">
-                    <p class="homepageInfoText">Welcome to Younglings, an innovative program run by Barclays Aliens that seeks to find young people interested in technology, develop their technical ability, and match them with a job at Aliens or another leading company in South Africa.</p>
-
-                    <p class="homepageInfoText">Through the Younglings program our students learn industry relevant, in-demand software engineering tools like Java and JavaScript, in addition to the soft skills that will help them excel in the workplace.</p>
-
-                    <p class="homepageInfoText">We are passionate about developing technical talent here in South Africa, expanding meaningful work to all people with the right combination of ability and drive. Here at Younglings, we are teaching the technologists of tomorrow. Join Us.</p>
+        <div>
+            <ul id="hexGrid">
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="#">
+                            <p class="longText">Current younglings</p>
+                        </a>
                     </div>
-                </div>
-                
-            <div>
-                 <ul id="hexGrid">
-                    <li class="hex">
-                        <div class="hexIn">
-                             <a class="hexLink" href="#">
-                                <p class="longText">Current younglings</p>
-                            </a>
-                        </div>
-                        
-                    </li>
-                    <li class="hex">
-                        <div class="hexIn">
-                             <a class="hexLink" href="#">
-                                <p class="longText">Become a youngling</p>
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li class="hex">
-                        
-                    </li>
-                    <li class="hex">
-                        <div class="hexIn">
-                             <a class="hexLink" href="#">
-                                <p class="longText">Partner with younglings</p>
-                            </a>
-                        </div>
-                        
-                    </li>
-                     <li class="hex">
-                        <div class="hexIn">
-                             <a class="hexLink" href="#">
-                                <p class="shortText" >#younglings101</p>
-                            </a>
-                        </div>
-                        
-                    </li>
-                </ul>
-            </div>
-               
-            </div>
-            <!-- current younglings panel -->
-            <div id="CY">     
-                <div id="CYapp" class="CYcontainer-fluid container-fluid">
-                    <div class="CYpage-header page-header" id="top">
-                        <h1 class="CYh1">Current Younglings</h1>
+
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="#">
+                            <p class="longText">Become a youngling</p>
+                        </a>
                     </div>
-                    <ul id="CYhexGrid">
-                        <li class="CYhex" ng-repeat="person in links">
-                            <div class="CYhexIn">
-                                <a class="CYhexLink" href="#CYframe" ng-click="setCurrentUrl(person.link)">
+                </li>
+
+                <li class="hex">
+
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="#">
+                            <p class="longText">Partner with younglings</p>
+                        </a>
+                    </div>
+
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="#">
+                            <p class="shortText">#younglings101</p>
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section class="anchor" id="CU">
+    <!-- current younglings panel -->
+    <div id="CY">
+        <div id="CYapp" class="CYcontainer-fluid container-fluid">
+            <div class="CYpage-header page-header" id="top">
+                <h1 class="CYh1">Current Younglings</h1>
+            </div>
+            <ul id="CYhexGrid">
+                <li class="CYhex" ng-repeat="person in links">
+                    <div class="CYhexIn">
+                        <a class="CYhexLink" href="#CYframe" ng-click="setCurrentUrl(person.link)">
                               <img src="{{person.src}}" alt="" class="CYimg-responsive img-responsive"/>
                               <h1 class="{{person.display}}">{{person.name}}</h1>
                               <p class="{{person.display}}">{{person.surname}}</p>
                             </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <iframe id="CYframe" ng-src="{{getUrl()}}" class="CYframe" scrolling="yes" ng-load="{{iframeResize()}}"></iframe>
-                </div>
-            </div>
+                    </div>
+                </li>
+            </ul>
+            <iframe id="CYframe" ng-src="{{getUrl()}}" class="CYframe" scrolling="yes" ng-load="{{iframeResize()}}"></iframe>
+        </div>
+    </div>
+    </section>
 
-            <!--#younglings101 panel-->
-            <div class = "younglings101-panel">
-            <div class = "younglings101">
-                <h1>#Younglings101</h1>
-                <!--<span class="fading-line"></span>-->
-                <h2>Check out what the younglings have been up to!</h2>
-            
+    <section class="anchor" id="Y101">
+    <!--#younglings101 panel-->
+    <div class="younglings101-panel" id="Y101">
+        <div class="younglings101">
+            <h1>#Younglings101</h1>
+            <!--<span class="fading-line"></span>-->
+            <h2>Check out what the younglings have been up to!</h2>
 
 
-                <div class = "row container-fluid">
-                    <nav class = "social-nav nav nav-navbar">
-                        <ul class="social-media-list">
-                            
-                                <li class = "nav-tab" id = "twitter-tab" onclick="window.location.href = '#!twitter'"><span>Twitter</span></li>
-                                <li class = "nav-tab" id = "facebook-tab" onclick="window.location.href = '#!facebook'"><span>Facebook</span></li>
-                                <li class = "nav-tab" id = "instagram-tab" onclick="window.location.href = '#!instagram'"><span>Instagram</span></li>
-                                <li class = "nav-tab" id = "youtube-tab" onclick="window.location.href = '#!youtube'"><span>Youtube</span></li>
-                                <li class = "nav-tab" id = "linkedin-tab" onclick="window.location.href = '#!linkedin'"><span>LinkedIn</span></li>
+
+            <div class="row container-fluid">
+                <nav class="social-nav nav nav-navbar">
+                    <ul class="social-media-list">
+
+                        <li class="nav-tab" id="twitter-tab" onclick="window.location.href = '#!twitter'"><span>Twitter</span></li>
+                        <li class="nav-tab" id="facebook-tab" onclick="window.location.href = '#!facebook'"><span>Facebook</span></li>
+                        <li class="nav-tab" id="instagram-tab" onclick="window.location.href = '#!instagram'"><span>Instagram</span></li>
+                        <li class="nav-tab" id="youtube-tab" onclick="window.location.href = '#!youtube'"><span>Youtube</span></li>
+                        <li class="nav-tab" id="linkedin-tab" onclick="window.location.href = '#!linkedin'"><span>LinkedIn</span></li>
 
                         <ul>
-                    </nav>
-                </div>
-                
-                <!--routing for #younglings101-->
-                <!--Display routed social media pages-->
-                <ng-view class = "social-media-display"></ng-view>
-
-                <!--social media script-->
-                
-                
-
-
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </nav>
             </div>
-            </div>
-            <!--become-a-youngling panel-->
-            <div class="become-a-youngling">
 
-    <div class="container-fluid">
+            <!--routing for #younglings101-->
+            <!--Display routed social media pages-->
+            <ng-view class="social-media-display"></ng-view>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-xs-3 col-md-3">
+            <!--social media script-->
 
 
-                    <ul class="BAYhexGrid">
 
 
-                    </ul>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    </section>
 
-                    <!--<img class="img-logo" src="Images/oracle.png" alt="Oracle Logo">
+    
+    <!--become-a-youngling panel-->
+    <section class="anchor" id="BAY">
+    <div class="become-a-youngling">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-xs-3 col-md-3">
+
+
+                        <ul class="BAYhexGrid">
+
+
+                        </ul>
+
+                        <!--<img class="img-logo" src="Images/oracle.png" alt="Oracle Logo">
                     <img class="img-logo" src="Images/western-cape-gov.png" alt="Western Cape Government Logo">
                     <img class="img-logo" src="Images/capaciti.jpg" alt="Capaciti Logo">-->
 
-                </div>
-                <div class="col-xs-6 col-md-6" id="become-youngling-text">
-                    <div class="container-fluid">
-                        <div class="row">
-
-                            <div class="col-lg-12" id="BAYnav-become-icons">
-                                <i class="fa fa-code fa-5x" id="BAYcollapse-icon"></i>
-                                <i class="fa fa-keyboard-o fa-5x" id="BAYcollapse-icon"></i>
-                                <i class="fa fa-briefcase fa-5x" id="BAYcollapse-icon"></i>
-                                <i class="fa fa-graduation-cap fa-5x" id="BAYcollapse-icon"></i>
-                            </div>
-                            <!---->
-                        </div>
-                        <!--end of row-->
-                        <div class="row">
-                            <div id="BAYstart_coding" class="col-xs-12 col-md-12">
-
-                                <h2>Start Coding</h2>
-                                <p>The program starts with 2 years of weekly classes to supplement school learning in Java.</p>
-                                <p>If you don’t have this baseline you may need to complete a bridging course to get up to speed.</p>
-                                <p>The most important things are a passion for tech and a drive to learn.</p>
-
-                            </div>
-                        </div>
-                        <!--end of row-->
-                        <div class="row">
-                            <div id="BAYsolidify_learning" class="col-xs-12 col-md-12">
-
-                                <h2>Solidify Learning</h2>
-                                <p>After passing your tests, you’ll move into CapaCiti for a 6-month course to solidify your learning in Java and JavaScript.</p>
-                                <p>Thanks to Oracle and the Western Cape Government, the course is free to students.</p>
-
-                            </div>
-                        </div>
-                        <!--end of row-->
-                        <div class="row">
-                            <div id="BAYlaunch_career" class="col-xs-12 col-md-12">
-
-                                <h2>Launch Your Career</h2>
-                                <p>You’ll finish your training with 6-months at an innovative company like Aliens, DVT, and more.</p>
-                                <p>Then you’ll move into a 1 year learnership to work on a real project as a software developer.</p>
-                                <p>You’ve made it! After the learnership you’ll gain employment with your company, move to another one, or start your own with support.</p>
-
-                            </div>
-                        </div>
-                        <!--end of row-->
-                        <div class="row">
-                            <div id="BAYgrow_profession" class="col-xs-12 col-md-12">
-
-                                <h2>Grow as an IT Professional</h2>
-                                <p>You’ve made it! After the learnership you’ll gain employment with your company, move to another one, or start your own with support.</p>
-                                <p>You’ll work with amazing mentors, contribute to various projects, and try out different techs on the bleeding edge of web design, mobile design, back-end programming, and more.</p>
-
-                            </div>
-                        </div>
-                        <!--end of row-->
                     </div>
-                    <!--end of container-->
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <ul class="BAYhexGrid">
+                    <div class="col-xs-6 col-md-6" id="become-youngling-text">
+                        <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="col-lg-12" id="BAYnav-become-icons">
+                                    <i class="fa fa-code fa-5x" id="BAYcollapse-icon"></i>
+                                    <i class="fa fa-keyboard-o fa-5x" id="BAYcollapse-icon"></i>
+                                    <i class="fa fa-briefcase fa-5x" id="BAYcollapse-icon"></i>
+                                    <i class="fa fa-graduation-cap fa-5x" id="BAYcollapse-icon"></i>
+                                </div>
+                                <!---->
+                            </div>
+                            <!--end of row-->
+                            <div class="row">
+                                <div id="BAYstart_coding" class="col-xs-12 col-md-12">
+
+                                    <h2>Start Coding</h2>
+                                    <p>The program starts with 2 years of weekly classes to supplement school learning in Java.</p>
+                                    <p>If you don’t have this baseline you may need to complete a bridging course to get up
+                                        to speed.</p>
+                                    <p>The most important things are a passion for tech and a drive to learn.</p>
+
+                                </div>
+                            </div>
+                            <!--end of row-->
+                            <div class="row">
+                                <div id="BAYsolidify_learning" class="col-xs-12 col-md-12">
+
+                                    <h2>Solidify Learning</h2>
+                                    <p>After passing your tests, you’ll move into CapaCiti for a 6-month course to solidify
+                                        your learning in Java and JavaScript.</p>
+                                    <p>Thanks to Oracle and the Western Cape Government, the course is free to students.</p>
+
+                                </div>
+                            </div>
+                            <!--end of row-->
+                            <div class="row">
+                                <div id="BAYlaunch_career" class="col-xs-12 col-md-12">
+
+                                    <h2>Launch Your Career</h2>
+                                    <p>You’ll finish your training with 6-months at an innovative company like Aliens, DVT,
+                                        and more.</p>
+                                    <p>Then you’ll move into a 1 year learnership to work on a real project as a software developer.</p>
+                                    <p>You’ve made it! After the learnership you’ll gain employment with your company, move
+                                        to another one, or start your own with support.</p>
+
+                                </div>
+                            </div>
+                            <!--end of row-->
+                            <div class="row">
+                                <div id="BAYgrow_profession" class="col-xs-12 col-md-12">
+
+                                    <h2>Grow as an IT Professional</h2>
+                                    <p>You’ve made it! After the learnership you’ll gain employment with your company, move
+                                        to another one, or start your own with support.</p>
+                                    <p>You’ll work with amazing mentors, contribute to various projects, and try out different
+                                        techs on the bleeding edge of web design, mobile design, back-end programming, and
+                                        more.</p>
+
+                                </div>
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of container-->
+                    </div>
+                    <div class="col-xs-3 col-md-3">
+                        <ul class="BAYhexGrid">
 
 
-                    </ul>
+                        </ul>
 
-                    <!--<div>
+                        <!--<div>
                         <a href="https://www.barclaysafrica.com/" target="_blank"><img class="img-logo-link" src="Images/barclays-africa.jpg" alt="Barclays Africa Logo" style="padding-top: 43px;"></a>
                         <a href="http://www.dvt.co.za/" target="_blank"><img class="img-logo-link" src="Images/dvt.jpg" alt="DVT Logo" style="padding-top: 10px;"></a>
                         <a href="https://www.oldmutual.co.za/" target="_blank"><img class="img-logo-link" src="Images/old-mutual.png" alt="Old Mutual Logo" style="padding-top: 10px;"></a>
@@ -244,87 +269,102 @@
                         <a href="http://www.realmdigital.co.za/" target="_blank"><img class="img-logo-link" src="Images/realm-digital.png" alt="Realm Digital Logo" style="padding-top: 10px;"></a>
                     </div>-->
 
+                    </div>
                 </div>
             </div>
+            <!--end of row-->
         </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
+        <!--end of container-->
         <script src="js/increment_hex.js" type="text/javascript"></script>
-</div>
-
-
-<!--Partner with Younglings-->
-<div class="PWYbody">
-    <link rel="stylesheet" href="../styles/PWYstyle.css">
-
-    <link href = "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel = "stylesheet">
-    <h1 class="pwyHeading">Partner with Younglings</h1>
-    </br>
-    <div class = "PWYbody2">
-        <p class = "pwy-p">
-            friendly short explanatory piece of text. friendly short explanatory piece of text. friendly short explanatory piece of text. friendly short explanatory piece of text. friendly short explanatory piece of text. 
-        </p>
-
-        <form class="formBg">
-            <input type="text" placeholder="Full Name" class="PWYinput-field">
-            </br>
-
-            <input type="text" placeholder="Company" class="PWYinput-field">
-            </br>
-            
-            <input type="text" placeholder="Subject" class="PWYinput-field">
-            </br>
-
-            <input type="text" placeholder="e-mail address" class="PWYinput-field">
-            </br>
-            
-            <textarea rows="7" cols="50" placeholder="Message" class="PWYinput-field"></textarea>
-            </br>
-            
-            <button class="PWYinput-button">Submit</button>
-        </form>
     </div>
-</div>
+    </section>
 
-<!--footer-->
-        <div class = "footer row container-fluid">
-            <div class = "rights col-sm-3 col-lg-3">
-                <h1>Barclays Aliens 2017. All rights reserved</h1>
-            </div>
+    <!--Partner with Younglings-->
+    <section class="anchor" id="PWY">
+    <div class="PWYbody">
+        <link rel="stylesheet" href="../styles/PWYstyle.css">
 
-            <div class = "row container-fluid">
-                    <ul class="footer-list">
-                            <li><a class = "footer-link fa fa-twitter-square" target = "_blank" href = "https://twitter.com/younglings101"></a></li>
-                            <li><a class = "footer-link fa fa-facebook-square" target = "_blank" href = "https://facebook.com/Younglings101"></a></li>
-                            <li><a class = "footer-link fa fa-instagram" target = "_blank" href = "https://instagram.com/younglings101"></a></li>                    
-                            <li><a class = "footer-link fa fa-youtube-square" target = "_blank" href = "https://www.youtube.com/playlist?list=PLMayUx925yVtEctboKbBY7uaFsWDN34cc"></a></li>
-                            <li><a class = "footer-link fa fa-linkedin-square" target = "_blank" href = "https://www.linkedin.com/in/alwyn-van-wyk-7bb5431"></a></li>
-                        
-                    <ul>
-            </div>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <h1 class="pwyHeading">Partner with Younglings</h1>
+        </br>
+        <div class="PWYbody2">
+            <p class="pwy-p">
+                friendly short explanatory piece of text. friendly short explanatory piece of text. friendly short explanatory piece of text.
+                friendly short explanatory piece of text. friendly short explanatory piece of text.
+            </p>
+
+            <form class="formBg">
+                <input type="text" placeholder="Full Name" class="PWYinput-field">
+                </br>
+
+                <input type="text" placeholder="Company" class="PWYinput-field">
+                </br>
+
+                <input type="text" placeholder="Subject" class="PWYinput-field">
+                </br>
+
+                <input type="text" placeholder="e-mail address" class="PWYinput-field">
+                </br>
+
+                <textarea rows="7" cols="50" placeholder="Message" class="PWYinput-field"></textarea>
+                </br>
+
+                <button class="PWYinput-button">Submit</button>
+            </form>
         </div>
-            <script src="lib/angular.min.js" type="text/javascript"></script>
-            <script src="lib/angular-route.js" type="text/javascript"></script>
-            <script src="js/younglings101Routing.js" type="text/javascript"></script>
-            <script>
-                $(document).ready(function () {
-                    $("a").on('click', function (event) {
-                        if (this.hash !== "") {
-                            event.preventDefault();
-                            var hash = this.hash;
-                            $('html, body').animate({
-                                scrollTop: ($(hash).offset().top - $('#younglingsNavBar').height())
-                            }, 600, function () {
-                                window.location.hash = hash;
-                                console.log($(hash).offset().top);
-                                console.log($('#younglingsNavBar').height());
-                                console.log($(hash).offset().top - $('#younglingsNavBar').height());
-                            });
-                        }
+    </div>
+</section>
+
+    <!--footer-->
+    <div class="footer row container-fluid">
+        <div class="rights col-sm-3 col-lg-3">
+            <h1>Barclays Aliens 2017. All rights reserved</h1>
+        </div>
+
+        <div class="row container-fluid">
+            <ul class="footer-list">
+                <li><a class="footer-link fa fa-twitter-square" target="_blank" href="https://twitter.com/younglings101"></a></li>
+                <li><a class="footer-link fa fa-facebook-square" target="_blank" href="https://facebook.com/Younglings101"></a></li>
+                <li><a class="footer-link fa fa-instagram" target="_blank" href="https://instagram.com/younglings101"></a></li>
+                <li><a class="footer-link fa fa-youtube-square" target="_blank" href="https://www.youtube.com/playlist?list=PLMayUx925yVtEctboKbBY7uaFsWDN34cc"></a></li>
+                <li><a class="footer-link fa fa-linkedin-square" target="_blank" href="https://www.linkedin.com/in/alwyn-van-wyk-7bb5431"></a></li>
+
+                <ul>
+        </div>
+    </div>
+    <script src="lib/angular.min.js" type="text/javascript"></script>
+    <script src="lib/angular-route.js" type="text/javascript"></script>
+    <script src="js/younglings101Routing.js" type="text/javascript"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
                     });
-                });
-            </script>
-            
-    </body>
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $(document).on('click', 'a.page-scroll', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script>
+
+</body>
+
 </html>
