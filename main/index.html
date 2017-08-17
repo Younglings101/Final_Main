@@ -142,29 +142,30 @@
 
                 <div class="tabable-panel">
                     <div class="tabable-line">
-                        <ul class="nav nav-tabs ">
-                            <li class="active">
-                                <a href="#facebook" data-toggle="tab">
-							Facebook </a>
+                        <ul class="nav nav-tabs">
+                            <li class="active" href="#facebook" data-toggle="tab">
+                                <!-- <div href="#facebook" data-toggle="tab">
+                            <h3>Facebook</h3></div> -->
+                            Facebook
                             </li>
 
                             <li>
-                                <a href="#twitter" data-toggle="tab">
-							Twitter </a>
+                                <div href="#twitter" data-toggle="tab">
+							<h3>Twitter</h3> </div>
                             </li>
 
                             <li>
-                                <a href="#instagram" data-toggle="tab">
-							Instagram </a>
+                                <div href="#instagram" data-toggle="tab">
+							<h3>Instagram</h3></div>
                             </li>
 
                             <li>
-                                <a href="#youtube" data-toggle="tab">
-							YouTube </a>
+                                <div href="#youtube" data-toggle="tab">
+							<h3>YouTube</h3></div>
                             </li>
                             <li>
-                                <a href="#Linkedin" data-toggle="tab">
-							LinkedIn </a>
+                                <div href="#Linkedin" data-toggle="tab">
+							LinkedIn </div>
                             </li>
 
                         </ul>
@@ -460,10 +461,29 @@
     <script src="lib/angular.min.js" type="text/javascript"></script>
     <script src="lib/angular-route.js" type="text/javascript"></script>
     <script src="js/younglings101Routing.js" type="text/javascript"></script>
-
+    <!-- <script>
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(document).ready(function () {
+            $(document).on('click', 'a.page-scroll', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script> -->
     <script>
         $(document).ready(function () {
-            $("#CYframe").on('click', function (event) {
+            // $(function () {
+            // $(document).on('click', 'a.page-scroll', function (event) {
+            //     var $anchor = $(this);
+            //     $('html, body').stop().animate({
+            //         scrollTop: $($anchor.attr('href')).offset().top
+            //     }, 1500, 'easeInOutExpo');
+            //     event.preventDefault();
+            // });
+            $("a").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
@@ -477,18 +497,7 @@
         });
     </script>
 
-    <script>
-        //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function () {
-            $(document).on('click', 'a.page-scroll', function (event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-    </script>
+
 
 </body>
 
