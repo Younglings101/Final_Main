@@ -24,6 +24,10 @@
         align-items: center;
     }
 
+    .index-nav-list a:hover{
+        text-decoration: none;
+    }
+
      ul{
         margin-bottom: 0px;
     }
