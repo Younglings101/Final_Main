@@ -6,6 +6,7 @@
     body{
         background-color: #be3144;
         width: 100%;
+        overflow-x: hidden;
     }
     
     /*index-style*/
