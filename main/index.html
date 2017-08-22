@@ -41,7 +41,7 @@
                 <a href="#PWY">
                     <li>Partner with Younglings</li>
                 </a>
-            <ul>
+                <ul>
         </nav>
     </div>
 
@@ -300,21 +300,21 @@
             </br>
             <div class="PWYbody2">
                 <p class="pwy-p">
-                    friendly short explanatory piece of text. friendly short explanatory piece of text. friendly short explanatory piece of text.
-                    friendly short explanatory piece of text. friendly short explanatory piece of text.
+                    Want to contact us?</br>
+                    Feel free to send us a message.
                 </p>
-                <form class="formBg">
-                    <input type="text" placeholder="Full Name" class="PWYinput-field">
+                <form action="https://formspree.io/your@email.com" method="POST" class="formBg">
+                    <input type="text" placeholder="Full Name" name="Name" class="PWYinput-field">
                     </br>
-                    <input type="text" placeholder="Company" class="PWYinput-field">
+                    <input type="text" placeholder="Company" name="Company" class="PWYinput-field">
                     </br>
-                    <input type="text" placeholder="Subject" class="PWYinput-field">
+                    <input type="text" placeholder="Subject" name="Subject" class="PWYinput-field">
                     </br>
-                    <input type="text" placeholder="E-mail address" class="PWYinput-field">
+                    <input type="text" placeholder="E-mail address" name="_replyto" class="PWYinput-field">
                     </br>
-                    <textarea rows="7" cols="50" placeholder="Message" class="PWYinput-field"></textarea>
+                    <textarea rows="7" cols="50" placeholder="Message" name="Message" class="PWYinput-field"></textarea>
                     </br>
-                    <button class="PWYinput-button">Submit</button>
+                    <input type="submit" value="Send">
                 </form>
             </div>
         </div>
@@ -332,7 +332,7 @@
                 <li><a class="footer-link fa fa-instagram" target="_blank" href="https://instagram.com/younglings101"></a></li>
                 <li><a class="footer-link fa fa-youtube-square" target="_blank" href="https://www.youtube.com/playlist?list=PLMayUx925yVtEctboKbBY7uaFsWDN34cc"></a></li>
                 <li><a class="footer-link fa fa-linkedin-square" target="_blank" href="https://www.linkedin.com/in/alwyn-van-wyk-7bb5431"></a></li>
-            <ul>
+                <ul>
         </div>
     </div>
     <script src="lib/angular.min.js" type="text/javascript"></script>
@@ -341,7 +341,7 @@
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
-                if(this.hash == "#CYframe" || this.hash == "#CY"){
+                if (this.hash == "#CYframe" || this.hash == "#CY") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
