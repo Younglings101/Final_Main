@@ -332,8 +332,7 @@
                 <li><a class="footer-link fa fa-instagram" target="_blank" href="https://instagram.com/younglings101"></a></li>
                 <li><a class="footer-link fa fa-youtube-square" target="_blank" href="https://www.youtube.com/playlist?list=PLMayUx925yVtEctboKbBY7uaFsWDN34cc"></a></li>
                 <li><a class="footer-link fa fa-linkedin-square" target="_blank" href="https://www.linkedin.com/in/alwyn-van-wyk-7bb5431"></a></li>
-
-                <ul>
+            <ul>
         </div>
     </div>
     <script src="lib/angular.min.js" type="text/javascript"></script>
@@ -342,7 +341,14 @@
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
-                if (this.hash !== "") {
+                if(this.hash == "#CYframe" || this.hash == "#CY"){
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600);
+                }
+                else if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
