@@ -1,6 +1,5 @@
 $(document).ready(function() {
     BAY_hex_increment();
-
 });
 
 $(window).resize(function() {
@@ -9,10 +8,10 @@ $(window).resize(function() {
 
 
 function BAY_hex_increment() {
-    var count = 0;
+    var count = 9;
 
     windowSize = $(window).width();
-    if (windowSize > 1471) {
+    if (windowSize >= 1471) {
 
         if (count > 8) {
 
