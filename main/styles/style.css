@@ -344,6 +344,7 @@
         height: auto;
         border: 1px solid #be3144;
         background-color: #6c6a6a;
+        text-align: center;
     }
 
     .twitter-panel {
@@ -374,6 +375,13 @@
         text-align: center;
     }
 
+    .linkedin-panel{
+        margin: 1px 1px 1px 1px;
+        height: auto;
+        border: 1px solid #be3144;
+        text-align: center;
+    }
+
     .tabcontent {
         display: none;
         padding: 20px 10px;
@@ -390,23 +398,22 @@
 
     .facebook-container {
         padding: 10px;
-        width: 49%;
         height: 100%;
         margin: auto;
     }
 
     .youtube-container {
         padding: 10px;
-        width: 49%;
+        width: 100%;
         height: 100%;
-        margin-left: 22%
+        margin: auto;
     }
 
     .instagram-container {
         padding: 10px;
-        width: 49%;
+        width: 100%;
         height: 100%;
-        margin-left: 22%
+        margin: auto;
     }
 
     .facebook {
@@ -444,9 +451,6 @@
             content: "\f0e1";
         }
 
-        .facebook{
-            width: 250px;
-        }
     }
 
     .ng-scope {
