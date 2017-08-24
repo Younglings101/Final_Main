@@ -9,10 +9,14 @@
         width: 100%;
         overflow-x: hidden;
     }
-    /*index-style*/
+
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 
     .index-nav {
-        background-color: #2A2929;
+        background-color:#323232;
         position: fixed;
         width: 100%;
         z-index: 2;
@@ -21,14 +25,34 @@
     }
 
     .index-nav-list {
-        list-style: none;
-        display: flex;
-        float: left;
-        align-items: center;
+        list-style-type: none;
+        display: block;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .index-nav-list a {
+        font-size: 24px;
+        color: #FFF;
+        text-decoration: none;
+        background-color: #323232;
+    }
+
+    .index-nav-list ul {
+        text-align: center;
+        padding: 0px 0px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .index-nav-list a:hover {
-        text-decoration: none;
+        background-color: #494949;
     }
 
     ul {
@@ -36,19 +60,9 @@
     }
 
     .index-nav-list li {
-        color: #FFF;
-        font-size: 24px;
         text-align: center;
-        padding: 5px 71px 5px 71px;
-        margin-bottom: 0px;
         font-size: 20px;
         text-decoration: none;
-    }
-
-    .index-nav-list li:hover {
-        color: #d3d6db;
-        background-color: #D13248;
-        cursor: pointer;
     }
 
     .footer {
@@ -375,7 +389,7 @@
         text-align: center;
     }
 
-    .linkedin-panel{
+    .linkedin-panel {
         margin: 1px 1px 1px 1px;
         height: auto;
         border: 1px solid #be3144;
@@ -450,7 +464,6 @@
             font-family: FontAwesome;
             content: "\f0e1";
         }
-
     }
 
     .ng-scope {
