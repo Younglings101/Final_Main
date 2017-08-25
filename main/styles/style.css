@@ -749,9 +749,10 @@
     /**/
     /* Current Younglings */
 
-    #CY {
-        margin: 0;
-        padding: 0;
+    #CU {
+        margin: 0px;
+        margin-top: 35px;
+        padding: 0px;
         height: auto;
     }
 
@@ -772,7 +773,7 @@
     .CYh1,
     .CYpage-header {
         border: none;
-        background-color: #be3144;
+        background-color: transparent;
         margin: 0px;
         padding: 1.5%;
         width: 100%;
